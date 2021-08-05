@@ -4,99 +4,129 @@
       <link rel="stylesheet" type="text/css" href="styles.css">
    </head>
    <body>
-      <ul class="ul-nav" id="top">
-         <!--Commenting out the following list items (will use these later)
-         <li><a href="#about">About Me</a></li>
-         <li><a href="#resume">Resume</a></li>
-         -->
-         <li class="dropdown">
-         <a href="javascript:void(0)" class="dropbtn">Projects</a>
-         <div class="dropdown-content">
-            <a href="#P1">Candidate Testing</a>
-            <a href="#P2">Scrabble Scorer</a>
-            <a href="#P3">Mars Rover</a>
-            <a href="#P4">HTML Me Something</a>
-         </div>
-         </li>
-      </ul>
-
-      <h1>LC101 Projects Overview</h1>
-      <p class="funParagraph" id="testP">LanuchCode's LC101 projects were fun to code! My LC101 projects are listed below.</p>
-      <h2 id="P1">Candidate Testing</h2>
-      <p>(Assignment #1)</p>
-      <p>This program allows a user to enter answers for a candidate assessment / quiz and then displays a detailed grade report.</p>
-      <p>Concepts learned:</p>
-      <ul>
-         <li>Coding in Javascript using Node.js on replit.com</li>
-         <li>Arrays</li>
-         <li>Repeating with Loops</li>
-         <li>Conditional Statements</li>
-         <li>Functions</li>
-         <li>Data types and variables</li>
-         <li>String manipulation</li>
-         <li>Debugging</li>
-      </ul>
-      <a href="#top">Back to Top</a>
-
-      <h2 id="P2">Scrabble Scorer</h2>
-      <p>(Assignment #2)</p>
-      <p>
-      Scrabble Scorer is a program written in Javascript using Node.js on replit.com.  To check the score of a word, the user can choose one of three scoring algorithm options. 
-      <p>
-      <p>Concepts learned:
-      </p>
-      <ul>
-         <li>Transforming an object containing an array of values for each key into a more search efficient object containing one value per key</li>
-         <li>Adding new key/value pairs to an object</li>
-         <li>Accessing properties and methods within an array of objects</li>
-         <li>While loops and for…in Loops</li>
-      </ul>
-      <a href="#top">Back to Top</a>
-
-      <h2 id="P3">Mars Rover</h2>
-      <p>(Assignment #3)</p>
-      <p>
-      The Mars Rover program, written in Javascript using Node.js on replit.com, is a simulation for issuing commands to a Mars rover from mission control.  Each list of commands is converted into a message and sent to the rover.  Upon receiving the message, the rover carries out the commands and creates a response with a completion status for each command.  This project was creating using the Test Driven Development software development process whereby each unit test is written (and run) before the corresponding code for each discrete feature is written (and tested).  The code can be refactored (also done in a TDD process) and the same tests can be used for regression testing.
-      </p>
-      <p>
-      Concepts learned:
-      </p>
-      <ul>
-         <li>
-         Unit Testing using Jasmine (Jasmine is a popular behavior-driven development framework for testing JavaScript code).
-         </li>  
-         <li>using the describe() function for a suite of tests</li>
-         <li>using the it() function for individual test specifications</li>
-         <li>Expectations with the expect() function, which takes a value, called the actual</li>
-         <li>The expectation function is chained with a built-in Matcher function, which takes the expected value</li>
-         <li>Test Driven Development - a software development process where each unit test is written first before writing the corresponding code</li>
-         <li>Exporting functions from modules</li>
-         <li>Classes – constructors and class methods</li>
-         <li>Creating instances of objects from classes</li>
-      </ul>
-      <a href="#top">Back to Top</a>
-
-      <h2 id="P4">HTML Me Something</h3>
-      <p>(Assignment # 4)</p>
-      This project uses HTML and CSS to build a web page.  This project involved local development with Visual Studio Code and Git, with changes pushed to a GitHub repository.  GitHub Pages, a static site hosting service, was used to pull the HTML and CSS files straight from the project repository on GitHub and publish to a GitHub Pages project site.  The URL for this web page is:  kellyj9.github.io/html-me-something
-      </p>
-      <p>
-      Concepts learned:
-      </p>
-      <ul>
-         <li>HTML</li>
-         <li>CSS</li>
-         <li>Remote repositories with GitHub and GitHub Pages</li>
-         <li>Local development with VS Code and Git Bash</li>
-         <li>Git commands learned included:</li>
-         <ul>
-            <li>Getting and Creating Projects – init, clone</li>
-            <li>Basic snapshotting – add, status, commit, diff, reset, rm</li>
-            <li>Branching and merging – branch, checkout, merge, stash</li>
-            <li>Sharing and updating projects – fetch, pull, push, remote</li>
-            <li>Inspection and Comparison – diff, log, show</li>
+      <header>
+         <ul class="ul-nav" id="top">
+            <!--Commenting out the following list items (will use these later)
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            -->
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+               <a href="#P1">Candidate Testing</a>
+               <a href="#P2">Scrabble Scorer</a>
+               <a href="#P3">Mars Rover</a>
+               <a href="#P4">HTML Me Something</a>
+            </div>
+            </li>
          </ul>
-      </ul>
-      <a href="#top">Back to Top</a>
+      </header>
+      <main>
+         <h1>LC101 Projects Overview</h1>
+         <p class="funParagraph" id="testP">LanuchCode's LC101 projects were fun to code! My LC101 projects are listed below.</p>
+         
+         <article>
+            <h2 id="P1">Candidate Testing</h2>
+            <p>(Assignment #1)</p>
+            <p>This program allows a user to enter answers for a candidate assessment / quiz and then displays a detailed grade report.</p>
+            <p>Concepts learned:</p>
+            <p>
+            <ul>
+               <li>Coding in Javascript using Node.js on replit.com</li>
+               <li>Arrays</li>
+               <li>Repeating with Loops</li>
+               <li>Conditional Statements</li>
+               <li>Functions</li>
+               <li>Data types and variables</li>
+               <li>String manipulation</li>
+               <li>Debugging</li>
+            </ul>
+            </p>
+            <img src = "images/imgProject01.jpg" alt= "Screenshot of Project #1">
+            <p>
+            <a href="#top">Back to Top</a>
+            </p>
+         </article>
+         <article>
+            <h2 id="P2">Scrabble Scorer</h2>
+            <p>(Assignment #2)</p>
+            <p>
+            Scrabble Scorer is a program written in Javascript using Node.js on replit.com.  To check the score of a word, the user can choose one of three scoring algorithm options. 
+            <p>
+            <p>Concepts learned:
+            </p>
+            <ul>
+               <li>Transforming an object containing an array of values for each key into a more search efficient object containing one value per key</li>
+               <li>Adding new key/value pairs to an object</li>
+               <li>Accessing properties and methods within an array of objects</li>
+               <li>While loops and for…in Loops</li>
+            </ul>
+         </p>
+         <img src = "images/imgProject03.jpg" alt= "Screenshot of Project #3">
+         <p>
+         <a href="#top">Back to Top</a>
+         </p>
+         </article>
+
+         <article>
+            <h2 id="P3">Mars Rover</h2>
+            <p>(Assignment #3)</p>
+            <p>
+            The Mars Rover program, written in Javascript using Node.js on replit.com, is a simulation for issuing commands to a Mars rover from mission control.  Each list of commands is converted into a message and sent to the rover.  Upon receiving the message, the rover carries out the commands and creates a response with a completion status for each command.  This project was creating using the Test Driven Development software development process whereby each unit test is written (and run) before the corresponding code for each discrete feature is written (and tested).  The code can be refactored (also done in a TDD process) and the same tests can be used for regression testing.
+            </p>
+            <p>
+            Concepts learned:
+            </p>
+            <p>
+            <ul>
+               <li>
+               Unit Testing using Jasmine (Jasmine is a popular behavior-driven development framework for testing JavaScript code).
+               </li>  
+               <li>using the describe() function for a suite of tests</li>
+               <li>using the it() function for individual test specifications</li>
+               <li>Expectations with the expect() function, which takes a value, called the actual</li>
+               <li>The expectation function is chained with a built-in Matcher function, which takes the expected value</li>
+               <li>Test Driven Development - a software development process where each unit test is written first before writing the corresponding code</li>
+               <li>Exporting functions from modules</li>
+               <li>Classes – constructors and class methods</li>
+               <li>Creating instances of objects from classes</li>
+            </ul>
+            </p>
+         </p>
+         <img src = "images/imgProject03.jpg" alt= "Screenshot of Project #3">
+         <p>
+         <a href="#top">Back to Top</a>
+         </p>
+         </article>
+
+         <article>
+            <h2 id="P4">HTML Me Something</h3>
+            <p>(Assignment # 4)</p>
+            This project uses HTML and CSS to build a web page.  This project involved local development with Visual Studio Code and Git, with changes pushed to a GitHub repository.  GitHub Pages, a static site hosting service, was used to pull the HTML and CSS files straight from the project repository on GitHub and publish to a GitHub Pages project site.  The URL for this web page is:  kellyj9.github.io/html-me-something
+            </p>
+            <p>
+            Concepts learned:
+            </p>
+            <ul>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>Remote repositories with GitHub and GitHub Pages</li>
+               <li>Local development with VS Code and Git Bash</li>
+               <li>Git commands learned included:</li>
+               <ul>
+                  <li>Getting and Creating Projects – init, clone</li>
+                  <li>Basic snapshotting – add, status, commit, diff, reset, rm</li>
+                  <li>Branching and merging – branch, checkout, merge, stash</li>
+                  <li>Sharing and updating projects – fetch, pull, push, remote</li>
+                  <li>Inspection and Comparison – diff, log, show</li>
+               </ul>
+            </ul>
+            <a href="#top">Back to Top</a>
+            </p>
+         </article>
+      </main>
+      <footer>
+         web page written Kelly Jones &copy;2021
+      </footer>
    </body>
 </html>
