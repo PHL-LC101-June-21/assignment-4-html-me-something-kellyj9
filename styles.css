@@ -24,6 +24,9 @@ p {
 #testP.funParagraph {
     color: green;
 }
+img {
+    padding-left: 15px;
+}
 
 .ul-nav {
     list-style-type: none;
