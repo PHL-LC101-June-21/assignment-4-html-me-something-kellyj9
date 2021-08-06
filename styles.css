@@ -3,12 +3,17 @@ body {
     margin: 8px;
     display: block;
     font-family: sans-serif, arial;
-    background-color:  #F2F1EF;
+    background-color: darkgrey;
 }
 
-main, article {
+main {
     padding: 5px;
-    background-color: #F2F1EF;
+    background-color: darkgrey;
+}
+
+article {
+    padding: 5px;
+    background-color: white;
 }
 
 h1 {
