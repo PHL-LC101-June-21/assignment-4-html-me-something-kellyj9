@@ -13,17 +13,11 @@ main {
 
 article {
     padding: 5px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
-h1 {
-    background-color: lightgray;
-    padding-left: 15px;
-}
-
-h2 {
-    background-color: lightgray;
-
+h1, h2 {
+    background-color: #aacaca;
     padding-left: 15px;
 }
 
@@ -38,6 +32,7 @@ img {
 a:visited {
     color: blue;
     background-color: blue;
+    text-decoration: none;
 }
 
 a:active {
@@ -49,7 +44,7 @@ a:active {
 .content {
     max-width: 1200px;
     margin: auto;
-  }
+}
 
 .ul-nav {
     list-style-type: none;
@@ -81,7 +76,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightgrey;
+    background-color: #D3D3D3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 999;
