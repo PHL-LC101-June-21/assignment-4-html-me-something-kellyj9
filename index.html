@@ -2,18 +2,23 @@
 <html lang="en-US">
    <head>
       <title>Kelly Jones</title>
+      <!-- Give the browser instructions on how to control the page's dimensions and scaling.  
+      The width=device-width part sets the width of the page to follow the screen-width of the device 
+      (which will vary depending on the device).
+      The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="styles.css">
    </head>
    <body>
       <header>
          <div class="navbar">
-            <!-- The following two links can be uncommented for later use!
+            <!-- The following two links are uncommented for later use!-->
+            <!--
             <a href="#home">About</a>
             <a href="#news">Resume</a>
-            -->
+            -->          
             <div class="dropdown" id="showtest">
-               <button class="dropbtn" onclick="myFunction()">LC101 Projects List &#9660;</button>
+               <button class="dropbtn" onclick="showOrHideMenu()">LC101 Projects List &#9660;</button>
                <div id="myDropDown" class="dropdown-content">
                   <div class="column-heading">
                      Unit 1 Assignments
@@ -35,7 +40,8 @@
             <h1 id="mainHeading">LC101 Projects Overview</h1>
             <section>
                <p class="funParagraph" id="testP">LaunchCode's LC101 projects were fun to code and became 
-               progressively more challenging (and fun!) with each new project.<br><br>My LC101 projects and the concepts learned are listed below.</p>
+               progressively more challenging (and fun!) with each new project.
+               <br><br>My LC101 projects and the concepts learned are listed below.</p>
             </section>
             <section>
                <h2 id="P1">Candidate Testing</h2>
@@ -80,8 +86,8 @@
             <section>
                <h2 id="P3">Mars Rover</h2>
                <p>(Assignment #3)</p>
-               <p>The Mars Rover program, written in Javascript using Node.js on replit.com, is a simulation for issuing commands to a Mars rover 
-               from mission control.  
+               <p>The Mars Rover program, written in Javascript using Node.js on replit.com, 
+               is a simulation for issuing commands to a Mars rover from mission control.  
                Each list of commands is converted into a message and sent to the rover.  
                Upon receiving the message, the rover carries out the commands and creates a response with a completion status for each command.  
                This project was creating using the Test Driven Development software development process whereby each unit test is written (and run) 
@@ -139,24 +145,25 @@
 
          /* For the drop memu */
          
-         function myFunction() {
-            document.getElementById("myDropDown").classList.toggle("show");
+         function showOrHideMenu() {
+            document.getElementById("myDropDown").classList.toggle("show"); /* toggles on or off the display:block for the menu */
             let x=  document.getElementById("myDropDown").classList.contains("show");
-            console.log("x=" + x);
-            if (x) {   /* if button was clicked and menu is displayed, 
-               when the mouse leaves add an event listener to clear the menu display when the mouse is moved away from the menu */
-              document.getElementById("showtest").addEventListener("mouseleave", removeTest);
+            if (x) {   /* if button was clicked and menu is showing, 
+                      when the mouse leaves, add an event listener to clear the menu from showing 
+                      when the mouse is moved away from the menu */
+               document.getElementById("showtest").addEventListener("mouseleave", clearMenu);
             }
-            else if (!x) { /* if the button was clicked but the menu is not displayed, the event listener needs to be removed now */
-               document.getElementById("showtest").removeEventListener("mouseleave", removeTest);   
+            else if (!x) { /* if the button was clicked but the menu is not displayed ("show" was toggled off), 
+                           then the event listener needs to be removed now */
+               document.getElementById("showtest").removeEventListener("mouseleave", clearMenu);   
             }
          }
 
-         function removeTest (){
-            /* On mouse out of the menu, toggle the menu to not display and then remove the event listener. */
+         /* On mouse out of the menu, toggle the menu to not show and then remove the event listener. */
+         function clearMenu(){
             document.getElementById("myDropDown").classList.toggle("show");
-            document.getElementById("showtest").removeEventListener("mouseleave", removeTest);      
-          }
+            document.getElementById("showtest").removeEventListener("mouseleave", clearMenu); 
+         }
 
          </script>
    </body>

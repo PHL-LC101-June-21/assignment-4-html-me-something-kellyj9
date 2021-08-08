@@ -5,7 +5,7 @@ html {
 body {
     margin: 8px;
     display: block;
-    font-family: sans-serif, arial;
+    font-family: sans-serif, Arial;
     background-color: darkgrey;
 }
 
@@ -59,12 +59,13 @@ a:visited, a:active {
 /* Style for dropdown on navbar (right now there's only one button) */
 .dropdown {
     display: contents; /* Separate the dropdown from the navbar, 
-                        preventing the whole navbar from becoming clickable */
+                        to prevent the whole navbar from becoming clickable */
 }
 
 /* style for dropdown menu button on navbar: */
 .dropdown .dropbtn {
     border: none;
+    font-family: sans-serif, Arial;
     color: whitesmoke;
     padding: 12px;
     background-color: inherit;
@@ -80,8 +81,9 @@ a:visited, a:active {
     padding: 12px;
     background-color: inherit;
     font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
-    display: block;
+    display: inline-block; /*inline-block prevents new buttons on navbar from displaying in rows*/
 }
 
 /* styles for navbar button link and dropdown menu link on hover */
@@ -89,29 +91,27 @@ a:visited, a:active {
     background-color: red;
 }
 
+/* Note: this class is for later use (when I add "About" and "Resume" links to navbar) */
 /* style for navbar links on hover */
 .navbar a:hover {
     background-color:#24292e;
     color:whitesmoke;
-    border: solid;
+    /*border: solid; */ /* commented this out because the border was making the navbar jump*/
     border-color: #24292e;
 }
 
 /* style for dropdown menu under navbar */
 .dropdown-content {
     display: none; /* make the drop down content hidden */
-    position: absolute;
+    position: absolute; /* can change this to relative to make a megamenu */
     background-color: #D3D3D3;
 }
 
 .show {
     display: block;
 }
-/*
-.hide {
-    display: none;
-}
-*/
+
+
 /* style for column of dropdown*/
 .column {
     width: 192px;
@@ -139,13 +139,6 @@ a:visited, a:active {
     background-color:whitesmoke;
     margin: 6px;
 }
-
-/*
-.column a:hover {
- /*   background-color: whitesmoke; 
- display: block;
-}
-*/
 
 #mainHeading {
     color: red;
