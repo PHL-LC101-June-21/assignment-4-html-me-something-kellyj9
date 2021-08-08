@@ -11,7 +11,7 @@ body {
 
 main {
     background-color: darkgrey;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: auto; /* centers the box horizontally, with top and bottom margin: 0 */
 }
 
@@ -41,6 +41,9 @@ ul {
 
 img {
     padding-left: 25px;
+    width: auto;
+    height:auto;
+    max-width: 90%;
 }
 
 a:visited, a:active {
@@ -94,7 +97,6 @@ a:visited, a:active {
     border-color: #24292e;
 }
 
-
 /* style for dropdown menu under navbar */
 .dropdown-content {
     display: none; /* make the drop down content hidden */
@@ -105,11 +107,11 @@ a:visited, a:active {
 .show {
     display: block;
 }
-
+/*
 .hide {
     display: none;
 }
-
+*/
 /* style for column of dropdown*/
 .column {
     width: 192px;
@@ -117,6 +119,7 @@ a:visited, a:active {
     background-color: #D3D3D3;
 }
 
+/* Style for header above links in mneu */
 .column-heading {
     padding: 10px 8px 0px 12px;
     font-size: 16px;
