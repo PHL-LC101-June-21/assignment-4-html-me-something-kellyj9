@@ -12,9 +12,9 @@
             <a href="#home">About</a>
             <a href="#news">Resume</a>
             -->
-            <div class="dropdown">
-               <button class="dropbtn">LC101 Projects List &#9660;</button>
-               <div class="dropdown-content">
+            <div class="dropdown" id="showtest">
+               <button class="dropbtn" onclick="myFunction()">LC101 Projects List &#9660;</button>
+               <div id="myDropDown" class="dropdown-content">
                   <div class="column-heading">
                      Unit 1 Assignments
                   </div>  
@@ -135,5 +135,27 @@
       <footer>
          web page by Kelly Jones &#169;2021
       </footer>
+      <script>
+
+         function myFunction() {
+            document.getElementById("myDropDown").classList.toggle("show");
+            let x=  document.getElementById("myDropDown").classList.contains("show");
+            console.log("x=" + x);
+            if (x) {   /* if button was clicked and menu is displayed, 
+               when the mouse leaves add an event listener to clear the menu display when the mouse is moved away from the menu */
+              document.getElementById("showtest").addEventListener("mouseleave", removeTest);
+            }
+            else if (!x) { /* if the button was clicked but the menu is not displayed, the event listener needs to be removed now */
+               document.getElementById("showtest").removeEventListener("mouseleave", removeTest);   
+            }
+         }
+
+         function removeTest (){
+            /* On mouse out of the menu, toggle the menu to not display and then remove the event listener. */
+            document.getElementById("myDropDown").classList.toggle("show");
+            document.getElementById("showtest").removeEventListener("mouseleave", removeTest);      
+          }
+
+         </script>
    </body>
 </html>
