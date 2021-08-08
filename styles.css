@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 8px;
     display: block;
@@ -6,10 +10,9 @@ body {
 }
 
 main {
-    padding: 0px;
     background-color: darkgrey;
     max-width: 1200px;
-    margin: auto;
+    margin: auto; /* centers the box horizontally, with top and bottom margin: 0 */
 }
 
 footer {
@@ -17,7 +20,6 @@ footer {
     font-size: 14px;
     text-align: center;
 }
-
 
 article {
     padding: 8px;
@@ -46,77 +48,95 @@ a:visited, a:active {
     background-color: blue;
 }
 
+/* Style for navigation bar */
 .navbar {
     background-color: #24292e;
 }
 
-.navbar a {
-    display: block;
-    /*float: left;*/
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
+/* Style for dropdown on navbar (right now there's only one button) */
 .dropdown {
-    display: block;
-    overflow: auto;
-    width: 100%;
+    display: contents; /* Separate the dropdown from the navbar, 
+    preventing the whole navbar from becoming clickable */
 }
 
+/* style for dropdown menu button on navbar: */
 .dropdown .dropbtn {
     border: none;
-    color: white;
+    color: whitesmoke;
     padding: 12px;
     background-color: inherit;
     font-size: 16px;
-    margin: 0;
     font-weight: bold;
+    width: 200px;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none; /* makes the drop down content hidden */
-    position: absolute;
-    background-color: #D3D3D3;
-    min-width: 160px;
-    z-index: 999;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block; /* unhides the drop down content on hover */
-}
-
-.column {
-    float: left;
-    width: 175px;
-    padding: 0px;
-    background-color: #D3D3D3;
-}
-
-.column a {
-    float: none;
-    color: black;
-    padding: 10px;
+/* styles for navbar links (these links, i.e. for About Me and Resume will be added later) */
+.navbar a {
+    border: none;
+    color: whitesmoke;
+    padding: 12px;
+    background-color: inherit;
+    font-size: 16px;
     text-decoration: none;
-    display: inline-block;
-    text-align: left;
-}
-
-.column a:hover {
-    background-color: whitesmoke;
     display: block;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+/* styles for navbar button link and dropdown menu link on hover: */
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/* style for navbar links on hover */
+.navbar a:hover {
+    transition-delay: .1s;
+    background-color:#24292e;
+    color:whitesmoke;
+    border: solid;
+    border-color: #24292e;
+}
+
+/* style for dropdown menu under navbar */
+.dropdown-content {
+    display: none; /* make the drop down content hidden */
+    position: absolute;
+    background-color: #D3D3D3;
+}
+
+/* style for the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block; /* unhides the drop down content on hover over drop down button */
+    position: absolute; /* change to  position: relative to make a megamenu */
+}
+
+/* style for column of dropdown*/
+.column {
+    width: 192px;
+    padding: 4px;
+    background-color: #D3D3D3;
+}
+
+.column-heading {
+    padding: 10px 8px 0px 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* style for links in column of dropdown content */
+.column a {
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+    display: block; /* link extends to end of block */
+    text-align: left;
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color:whitesmoke;
+    margin: 6px;
+}
+
+.column a:hover {
+ /*   background-color: whitesmoke; */
+ display: block;
 }
 
 #mainHeading {
