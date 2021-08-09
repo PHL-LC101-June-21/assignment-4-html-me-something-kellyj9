@@ -17,8 +17,8 @@
             <a href="#home">About</a>
             <a href="#news">Resume</a>
             -->          
-            <div class="dropdown" id="showdropdown">
-               <button class="dropbtn" onclick="showOrHideMenu()">Projects List &#9660;</button>
+            <div id="showdropdown" class="dropdown">
+               <button id="dropbutton" class="dropbtn">Projects List &#9660;</button>
                <div id="dropdowncontentid" class="dropdown-content">
                   <div class="column-heading">
                      Unit 1 Assignments
@@ -147,7 +147,7 @@
 
          /* For a drop menu */
          
-         function showOrHideMenu() {
+         function showOrHideMenu(e) {
              /* toggle on or off the display:block for the drop menu */
             document.getElementById("dropdowncontentid").classList.toggle("show");
 
@@ -169,6 +169,8 @@
             document.getElementById("dropdowncontentid").classList.toggle("show");
             document.getElementById("showdropdown").removeEventListener("mouseleave", clearMenu); 
          }
+
+         document.getElementById("dropbutton").addEventListener("click", showOrHideMenu);
 
          </script>
    </body>
