@@ -73,10 +73,9 @@ a:visited, a:active {
     background-color: #24292e;
 }
 
-/* Style for dropdowns on navbar 
-   Might uncomment later.  Right now there's only one dropdown. */
+/* Style for dropdown on navbar */
 .dropdown {
-    display: inline-block; /* Separate the dropdown button */
+    display: inline-block; /* Separates the dropdown from the navbar */
 }
 
 /* style for dropdown menu button on navbar: */
