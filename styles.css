@@ -23,7 +23,6 @@ footer {
 
 article {
     background-color: whitesmoke;
-
     padding: 12px;
 }
 
@@ -44,7 +43,7 @@ ul {
 img {
     width: auto;
     height: auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 /* captions for images */
