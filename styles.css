@@ -49,7 +49,6 @@ img {
 
 /* captions for images */
 figure {
-    padding-left: 20px;
     width: fit-content;
     height: auto;
 }
