@@ -17,7 +17,7 @@
             <a href="#home">About</a>
             <a href="#news">Resume</a>
             -->          
-            <div class="dropdown" id="showtest">
+            <div class="dropdown" id="showdropdown">
                <button class="dropbtn" onclick="showOrHideMenu()">Projects List &#9660;</button>
                <div id="dropdowncontentid" class="dropdown-content">
                   <div class="column-heading">
@@ -130,11 +130,10 @@
                   <li>Local development with VS Code and Git</li>
                   <li>Git commands learned included:</li>
                   <ul>
-                     <li>Getting and Creating Projects – init, clone</li>
-                     <li>Basic snapshotting – add, status, commit, diff, reset, rm</li>
-                     <li>Branching and merging – branch, checkout, merge, stash</li>
-                     <li>Sharing and updating projects – fetch, pull, push, remote</li>
-                     <li>Inspection and Comparison – diff, log, show</li>
+                     <li>Getting and Creating Projects – clone</li>
+                     <li>Basic snapshotting – add, status, commit, reset</li>
+                     <li>Sharing and updating projects – push, remote</li>
+                     <li>Inspection and Comparison – diff</li>
                   </ul>
                </ul>
                <p><a href="#top">Back to Top &uparrow;</a></p>
@@ -146,28 +145,29 @@
       </footer>
       <script>
 
-         /* For the drop memu */
+         /* For a drop menu */
          
          function showOrHideMenu() {
-            document.getElementById("dropdowncontentid").classList.toggle("show"); /* toggles on or off the display:block for the menu */clearMenu
+             /* toggle on or off the display:block for the drop menu */
+            document.getElementById("dropdowncontentid").classList.toggle("show");
 
             let x=  document.getElementById("dropdowncontentid").classList.contains("show");
             if (x) {   
-            /* if button was clicked and menu is showing ("show" was toggled on),
-               clear the menu from showing when the mouse is moved away from the menu */
-               document.getElementById("showtest").addEventListener("mouseleave", clearMenu);
+            /* if button was clicked and drop menu is showing ("show" was toggled on),
+               clear the drop menu from showing when the mouse is moved away from it */
+               document.getElementById("showdropdown").addEventListener("mouseleave", clearMenu);
             }
             else if (!x) { 
-            /* if the button was clicked but the menu is not showing ("show" was toggled off), 
+            /* if the button was clicked but the drop menu is not showing ("show" was toggled off), 
                then the event listener needs to be removed now */
-               document.getElementById("showtest").removeEventListener("mouseleave", clearMenu);   
+               document.getElementById("showdropdown").removeEventListener("mouseleave", clearMenu);   
             }
          }
 
-         /* On mouse out of the menu, toggle the menu to not show and then remove the event listener. */
+         /* On mouse out of the menu, toggle to not show the drop menu and then remove the event listener. */
          function clearMenu() {
             document.getElementById("dropdowncontentid").classList.toggle("show");
-            document.getElementById("showtest").removeEventListener("mouseleave", clearMenu); 
+            document.getElementById("showdropdown").removeEventListener("mouseleave", clearMenu); 
          }
 
          </script>
