@@ -57,7 +57,7 @@ a:visited, a:active {
 }
 
 /* Style for dropdown on navbar 
-   Might need to uncomment later.  Right now there's only one dropdown. */
+   Can uncomment later.  Right now there's only one dropdown. */
 /*.dropdown {
     display: inline-block; /* Separate the dropdown button /*
 }*/
@@ -104,7 +104,7 @@ a:visited, a:active {
 
 /* style for dropdown menu under navbar */
 .dropdown-content {
-    display: none; /* make the drop down content hidden */
+    display: none; /* make the drop down content hidden at first */
     position: absolute; /* can change this to relative to make a megamenu */
     background-color: #D3D3D3;
 }
