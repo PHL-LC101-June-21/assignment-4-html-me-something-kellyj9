@@ -12,14 +12,14 @@
    <body>
       <header>
          <div class="navbar">
-            <!-- The following two links are uncommented for later use!-->
+            <!-- The following two links can be uncommented for later use!-->
             <!--
             <a href="#home">About</a>
             <a href="#news">Resume</a>
             -->          
             <div class="dropdown" id="showtest">
-               <button class="dropbtn" onclick="showOrHideMenu()">LC101 Projects List &#9660;</button>
-               <div id="myDropDown" class="dropdown-content">
+               <button class="dropbtn" onclick="showOrHideMenu()">Projects List &#9660;</button>
+               <div id="dropdowncontentid" class="dropdown-content">
                   <div class="column-heading">
                      Unit 1 Assignments
                   </div>  
@@ -37,11 +37,11 @@
       </header>
       <main>
          <article>
-            <h1 id="mainHeading">LC101 Projects Overview</h1>
+            <h1 id="mainHeading">LC101 Assignments Overview</h1>
             <section>
-               <p class="funParagraph" id="testP">LaunchCode's LC101 projects were fun to code and became 
+               <p class="funParagraph" id="testP">LaunchCode's LC101 assignments were fun to code and became 
                progressively more challenging (and fun!) with each new project.
-               <br><br>My LC101 projects and the concepts learned are listed below.</p>
+               <br><br>My LC101 assignments and the concepts learned are listed below.</p>
             </section>
             <section>
                <h2 id="P1">Candidate Testing</h2>
@@ -50,7 +50,7 @@
                quiz and then displays a detailed grade report.</p>
                <p>Concepts learned:</p>
                <ul>
-                  <li>Coding in Javascript using Node.js in the IDE on replit.com</li>
+                  <li>Coding in Javascript using Node.js in the replit.com IDE</li>
                   <li>Creating and manipulating arrays</li>
                   <li>Iterating through code with for loops</li>
                   <li>Conditional Statements</li>
@@ -115,16 +115,16 @@
             <section>
                <h2 id="P4">HTML Me Something</h2>
                <p>(Assignment # 4)</p>
-               <p>This project uses HTML and CSS to build a web page.  
-               This project involved local development with Visual Studio Code and Git, with changes pushed to a GitHub repository.  
+               <p>HTML, CSS, and JavaScript were used to build a web page. 
+               This assignment involved local development with Visual Studio Code and Git, with changes pushed to a GitHub repository.  
                GitHub Pages, a static site hosting service, was used to pull the HTML and CSS files straight from the project 
                repository on GitHub and publish to a GitHub Pages project site.</p>
                <p>Concepts learned:</p>
                <ul>
                   <li>HTML for building a web page from scratch</li>
                   <li>CSS to separate content from design and layout</li>
-                  <li>Remote repositories with GitHub and GitHub Pages</li>
-                  <li>Local development with VS Code and Git Bash</li>
+                  <li>Remote repositories with GitHub</li>
+                  <li>Local development with VS Code and Git</li>
                   <li>Git commands learned included:</li>
                   <ul>
                      <li>Getting and Creating Projects – init, clone</li>
@@ -146,22 +146,24 @@
          /* For the drop memu */
          
          function showOrHideMenu() {
-            document.getElementById("myDropDown").classList.toggle("show"); /* toggles on or off the display:block for the menu */
-            let x=  document.getElementById("myDropDown").classList.contains("show");
-            if (x) {   /* if button was clicked and menu is showing, 
-                      when the mouse leaves, add an event listener to clear the menu from showing 
-                      when the mouse is moved away from the menu */
+            document.getElementById("dropdowncontentid").classList.toggle("show"); /* toggles on or off the display:block for the menu */clearMenu
+
+            let x=  document.getElementById("dropdowncontentid").classList.contains("show");
+            if (x) {   
+            /* if button was clicked and menu is showing ("show" was toggled on),
+               clear the menu from showing when the mouse is moved away from the menu */
                document.getElementById("showtest").addEventListener("mouseleave", clearMenu);
             }
-            else if (!x) { /* if the button was clicked but the menu is not displayed ("show" was toggled off), 
-                           then the event listener needs to be removed now */
+            else if (!x) { 
+            /* if the button was clicked but the menu is not showing ("show" was toggled off), 
+               then the event listener needs to be removed now */
                document.getElementById("showtest").removeEventListener("mouseleave", clearMenu);   
             }
          }
 
          /* On mouse out of the menu, toggle the menu to not show and then remove the event listener. */
-         function clearMenu(){
-            document.getElementById("myDropDown").classList.toggle("show");
+         function clearMenu() {
+            document.getElementById("dropdowncontentid").classList.toggle("show");
             document.getElementById("showtest").removeEventListener("mouseleave", clearMenu); 
          }
 
