@@ -1,8 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
    <head>
+      <title>Kelly Jones</title>
+      <!-- Give the browser instructions on how to control the page's dimensions and scaling.  
+      The width=device-width part sets the width of the page to follow the screen-width of the device 
+      (which will vary depending on the device).
+      The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="styles.css">
    </head>
    <body>
-      <!-- Write your HTML in this file! -->
+      <header>
+         <div class="navbar">
+            <!-- The following two links can be uncommented for later use!-->
+            <!--
+            <a href="#home">About</a>
+            <a href="#news">Resume</a>
+            -->          
+            <div id="showdropdown" class="dropdown">
+               <button id="dropbutton" class="dropbtn">Projects List &#9660;</button>
+               <div id="dropdowncontentid" class="dropdown-content">
+                  <div class="column-heading">
+                     Unit 1 Assignments
+                  </div>  
+                  <div class="row">
+                     <div class="column"> 
+                        <a href="#P1">Candidate Testing</a>
+                        <a href="#P2">Scrabble Scorer</a>
+                        <a href="#P3">Mars Rover</a>
+                        <a href="#P4">HTML Me Something</a>
+                     </div>
+                  </div>
+               </div>
+            </div> 
+         </div>
+      </header>
+      <main>
+         <article>
+            <h1 id="mainHeading">LC101 Assignments Overview</h1>
+            <section>
+               <p class="funParagraph" id="testP">LaunchCode's LC101 assignments were fun to code and became 
+               progressively more challenging (and more fun!)
+               <br><br>My LC101 assignments and the concepts learned are listed below.</p>
+            </section>
+            <section>
+               <h2 id="P1">Candidate Testing</h2>
+               <p>(Assignment #1)</p>
+               <p>The Candidate Testing program allows a user to enter answers for a candidate assessment / 
+               quiz and then displays a detailed grade report.</p>
+               <p>Concepts learned:</p>
+               <ul>
+                  <li>Coding in JavaScript using Node.js in the replit.com IDE</li>
+                  <li>Creating and manipulating arrays</li>
+                  <li>Iterating through code with for loops</li>
+                  <li>Conditional Statements</li>
+                  <li>Functions to define and repeatedly execute blocks of code</li>
+                  <li>Data types and variables</li>
+                  <li>String manipulation</li>
+                  <li>Debugging</li>
+               </ul>
+               <figure>
+                  <figcaption>Screenshot of Candidate Testing program</figcaption>
+                  <img src="images/imgProject01.jpg" alt="Screenshot of Project 1">
+               </figure>
+               <p>
+               <a href="#top">Back to Top &uparrow;</a>
+               </p>
+            </section>
+
+            <section>
+               <h2 id="P2">Scrabble Scorer</h2>
+               <p>(Assignment #2)</p>
+               <p>Scrabble Scorer is a program written in JavaScript using Node.js on replit.com.  
+               To check the score of a word, the user can choose one of three scoring algorithm options.<p>
+               <p>Concepts learned:</p>
+               <ul>
+                  <li>Transforming an object containing an array of values for each key into a more search efficient object 
+                  containing one value per key</li>
+                  <li>Adding new key/value pairs to an object</li>
+                  <li>Assigning methods as properties of an object</li>
+                  <li>Accessing properties and methods within an array of objects</li>
+                  <li>While loops and for…in Loops</li>
+               </ul>
+               <figure>
+                  <figcaption>Screenshot of Scrabble Scorer program</figcaption>
+                  <img src="images/imgProject02.jpg" alt="Screenshot of Project 2">
+               </figure>
+               <p><a href="#top">Back to Top &uparrow;</a></p>
+            </section>
+
+            <section>
+               <h2 id="P3">Mars Rover</h2>
+               <p>(Assignment #3)</p>
+               <p>The Mars Rover program, written in JavaScript using Node.js on replit.com, 
+               is a simulation for issuing commands to a Mars rover from mission control.  
+               Each list of commands is converted into a message and sent to the rover.  
+               Upon receiving the message, the rover carries out the commands and creates a response with a completion status for each command.  
+               This project was creating using the Test Driven Development software development process whereby each unit test is written (and run) 
+               before the corresponding code for each discrete feature is written.  
+               The code can be refactored (also done in a TDD process) and the same tests can be used for regression testing.</p>
+               <p>Concepts learned:</p>
+               <ul>
+                  <li>Unit Testing using Jasmine, a popular behavior-driven development framework for testing JavaScript code</li>  
+                  <ul>
+                     <li>Using the describe() function for a suite of tests</li>
+                     <li>Using the it() function for individual test specifications</li>
+                     <li>Expectations with the expect() function, which takes a value, called the actual, 
+                     for comparison to the expected value</li>
+                     <li>The expectation function is chained with a built-in Matcher function, 
+                     which compares the expected value to the actual value</li>
+                  </ul>
+                  <li>Test Driven Development (TDD)</li>
+                  <li>Exporting functions from modules</li>
+                  <li>Classes as templates for creating objects - with class constructors and methods</li>
+                  <li>Creating and using instances of objects from classes</li>
+               </ul>
+               <figure>
+                  <figcaption>Screenshot of Mars Rover program passing all unit tests</figcaption>
+                  <img src="images/imgProject03.jpg" alt="Screenshot of Project 3">
+               </figure>
+               <p><a href="#top">Back to Top &uparrow;</a></p>
+            </section>
+
+            <section>
+               <h2 id="P4">HTML Me Something</h2>
+               <p>(Assignment # 4)</p>
+               <p>HTML, CSS, and JavaScript were used to build a web page. 
+               This assignment involved local development with Visual Studio Code and Git, with changes pushed to a GitHub repository.  
+               GitHub Pages, a static site hosting service, was used to pull the HTML and CSS files straight from the project 
+               repository on GitHub and publish to a GitHub Pages project site.</p>
+               <p>Concepts learned:</p>
+               <ul>
+                  <li>HTML for building a web page from scratch</li>
+                  <li>CSS to separate content from design and layout</li>
+                  <li>JavaScript with an event listener to handle the navigation menu</li>
+                  <li>Remote repositories with GitHub</li>
+                  <li>Local development with VS Code and Git</li>
+                  <li>Git commands learned included:</li>
+                  <ul>
+                     <li>Getting and creating projects – clone</li>
+                     <li>Basic snapshotting – add, status, commit, reset</li>
+                     <li>Sharing and updating projects – push, remote</li>
+                     <li>Inspection and comparison – diff</li>
+                  </ul>
+               </ul>
+               <p><a href="#top">Back to Top &uparrow;</a></p>
+            </section>
+         </article>
+      </main>
+      <footer>
+         web page by Kelly Jones &#169;2021
+      </footer>
+      <script>
+
+         /* For a drop menu */
+         
+         function showOrHideMenu() {
+             /* toggle on or off the display:block for the drop menu */
+            document.getElementById("dropdowncontentid").classList.toggle("show");
+
+            let x=  document.getElementById("dropdowncontentid").classList.contains("show");
+            if (x) {   
+            /* if button was clicked and drop menu is showing ("show" was toggled on),
+               clear the drop menu from showing when the mouse is moved away from it */
+               document.getElementById("showdropdown").addEventListener("mouseleave", clearMenu);
+            }
+            else if (!x) { 
+            /* if the button was clicked but the drop menu is not showing ("show" was toggled off), 
+               then the event listener needs to be removed now */
+               document.getElementById("showdropdown").removeEventListener("mouseleave", clearMenu);
+            }
+         }
+
+         /* On mouse out of the menu, toggle to not show the drop menu and then remove the event listener. */
+         function clearMenu() {
+            document.getElementById("dropdowncontentid").classList.toggle("show");
+            document.getElementById("showdropdown").removeEventListener("mouseleave", clearMenu); 
+         }
+
+         document.getElementById("dropbutton").addEventListener("click", showOrHideMenu);
+
+         </script>
    </body>
 </html>

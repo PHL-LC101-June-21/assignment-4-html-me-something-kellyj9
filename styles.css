@@ -1,1 +1,169 @@
-/* Write your CSS here! */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 8px;
+    display: block;
+    font-family: sans-serif, Arial;
+    background-color: darkgrey;
+}
+
+main {
+    background-color: darkgrey;
+    max-width: 1024px;
+    margin: auto; /* centers the box horizontally with top and bottom margin: 0 */
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+article {
+    background-color: whitesmoke;
+    padding: 12px;
+}
+
+h1, h2 {
+    background-color: #aacaca;
+    margin: 8px;
+    padding-left: 8px;
+}
+
+p {
+    padding-left: 25px;
+}
+
+ul {
+    padding-left: 50px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/* captions for images */
+figure {
+    width: fit-content;
+    height: auto;
+}
+  
+/* captions for images */
+figcaption {
+    width: fit-content;
+    height: auto;
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+
+a:visited, a:active {
+    color: blue;
+    background-color: blue;
+}
+
+/* Style for navigation bar */
+.navbar {
+    background-color: #24292e;
+}
+
+/* Style for dropdown on navbar */
+.dropdown {
+    display: inline-block; /* Separates the dropdown from the navbar */
+}
+
+/* style for dropdown menu button on navbar: */
+.dropbtn {
+    border: none;
+    font-family: sans-serif, Arial;
+    color: whitesmoke;
+    padding: 12px;
+    background-color: #24292e;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+/* styles for navbar links (these links, i.e. for About Me and Resume will be added later) */
+/*.navbar a {
+    border: none;
+    color: whitesmoke;
+    padding: 12px;
+    background-color: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block; /* inline-block prevents new buttons on navbar from displaying in rows*/
+/*}
+*/
+
+/* styles for navbar button link and dropdown menu link on hover */
+/*.dropdown:hover .dropbtn {*/
+.dropdown:hover .dropbtn {    
+    background-color: red;
+}
+
+/* Note: this class is for later use (when I add "About" and "Resume" links to navbar) */
+/* style for navbar links on hover */
+.navbar a:hover {
+    background-color:#24292e;
+    color:whitesmoke;
+    /*border: solid; */ /* commented this out because the border was making the navbar jump*/
+    border-color: #24292e;
+}
+
+/* style for dropdown menu under navbar */
+.dropdown-content {
+    display: none; /* make the drop down content hidden at first */
+    position: absolute; /* can change this to relative to make a megamenu */
+    background-color: #D3D3D3;
+}
+
+/* Used to toggle on or off the dropdown menu*/
+.show {
+    display: block;
+}
+
+/* style for column of dropdown*/
+.column {
+    width: 192px;
+    padding: 4px;
+    background-color: #D3D3D3;
+}
+
+/* Style for header above links in mneu */
+.column-heading {
+    padding: 10px 8px 0px 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* style for links in column of dropdown content */
+.column a {
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+    display: block; /* link extends to end of block */
+    text-align: center;
+    border-style: solid;
+    border-color: whitesmoke;
+    background-color:whitesmoke;
+    margin: 6px;
+}
+
+#mainHeading {
+    color: red;
+}
+
+#testP.funParagraph {
+    color: green;
+}
