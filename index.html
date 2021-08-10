@@ -155,7 +155,7 @@
 
          /* For a drop menu */
          
-         function showOrHideMenu(e) {
+         function showOrHideMenu() {
              /* toggle on or off the display:block for the drop menu */
             document.getElementById("dropdowncontentid").classList.toggle("show");
 
@@ -168,8 +168,7 @@
             else if (!x) { 
             /* if the button was clicked but the drop menu is not showing ("show" was toggled off), 
                then the event listener needs to be removed now */
-               
-               document.getElementById("showdropdown").removeEventListener("mouseleave", clearMenu);   
+               document.getElementById("showdropdown").removeEventListener("mouseleave", clearMenu);
             }
          }
 

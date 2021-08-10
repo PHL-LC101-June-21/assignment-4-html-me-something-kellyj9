@@ -106,7 +106,8 @@ a:visited, a:active {
 */
 
 /* styles for navbar button link and dropdown menu link on hover */
-.dropdown:hover .dropbtn {
+/*.dropdown:hover .dropbtn {*/
+.dropdown:hover .dropbtn {    
     background-color: red;
 }
 
